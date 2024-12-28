@@ -3,6 +3,7 @@ import { RemixServer } from '@remix-run/react';
 import { isbot } from 'isbot';
 import pkg from 'react-dom/server';
 const { renderToReadableStream } = pkg;
+console.log('renderToReadableStream:', renderToReadableStream);
 import { renderHeadToString } from 'remix-island';
 import { Head } from './root';
 import { themeStore } from '~/lib/stores/theme';
